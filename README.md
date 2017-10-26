@@ -18,6 +18,69 @@
 **Singleton模式**<br/>
 **Observer模式**<br/>
 **Template Method模式**<br/>
+樣板方法模式：將一個演算法的骨架定義在一個方法中，而其中的某些方法定義在次類別中，樣板方法讓次類別可以在不改變演算法架構的情況下，重新定義演算法中的某些步驟。<br/>
+我們用泡茶和咖啡來解釋樣板方法模式，假設我們有以下兩個類別Coffee和Tea，我們可以看出兩個類別提供的方法，有很多類似的地方。<br/>
+```C++
+class Coffee{
+public:
+    void prepareRecipe(){
+        boilWater();
+        brewCoffeeGrinds();
+        pourInCup();
+    }
+    void boilWater(){ cout << "煮開水" << endl; }
+    void brewCoffeeGrinds(){ cout << "煮咖啡" << endl; }
+    void pourInCup(){ cout << "倒入杯中" << endl; }
+};
+
+class Tea{
+public:
+    void prepareRecipe(){
+        boilWater();
+        steepTeaBag();
+        pourInCup();
+    }
+    void boilWater(){ cout << "煮開水" << endl; }
+    void steepTeaBag(){ cout << "泡茶" << endl; }
+    void pourInCup(){ cout << "倒入杯中" << endl; }
+};
+```
+創造一個Beverage類別，將Coffee和Tea類別相同的地方，抽取到Beverage類別內<br/>
+
+```C++
+#include <iostream>
+using namespace std;
+
+class Beverage{
+public:
+    void prepareRecipe(){
+        boilWater();
+        brew();
+        pourInCup();
+    }
+    void boilWater(){ cout << "煮開水" << endl; }
+    virtual void brew() = 0;
+    void pourInCup(){ cout << "倒入杯中" << endl; }
+};
+class Coffee : public Beverage{
+public:
+    void brew(){ cout << "煮咖啡" << endl; }
+};
+
+class Tea : public Beverage{
+public:
+    void brew(){ cout << "泡茶" << endl; }
+};
+
+int main(){
+    Coffee myCoffee;
+    Tea myTea;
+    myCoffee.prepareRecipe();
+    myTea.prepareRecipe();
+    return 0;
+}
+```
+<br/>
 
 **Façade模式**<br/>
 表象模式：提供了一個統一的介面，用來存取次系統的一群介面，讓次系統共容易使用<br/>
