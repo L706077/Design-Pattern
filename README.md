@@ -14,3 +14,16 @@
 #### abstract class
 一個類別中如果含有純虛擬函式，則該類別為一「抽象類別」（Abstract class），該類別只能被繼承，而不能用來直接生成實例，如果試圖使用一個抽象類別來生成實例，則會發生編譯錯誤。<br/>
 
+
+**Singleton模式**
+**Observer模式**
+**Template Method模式**
+**Façade模式**
+**State模式**
+**Factory Method模式**
+**Abstract Factory模式**
+**Strategy模式**
+**Command模式**
+**Adapter模式**
+**Composite模式**
+
