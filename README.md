@@ -6,6 +6,11 @@
 
 - [虛擬函式、抽象類別](https://openhome.cc/Gossip/CppGossip/PureVirtualFunction.html)
 
+- [video1](https://www.youtube.com/watch?v=g3cN-_MBvZg)
+
+- [video2-c++](https://www.youtube.com/channel/UCqDN2eVe-e-HCkbmw4fy4Tw)
+
+- [video3-c++](https://www.youtube.com/watch?v=1oz1b6WLwZE)
 
 ### abstract class, virtual function, override
 #### virtual function
