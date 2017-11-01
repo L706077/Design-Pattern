@@ -24,20 +24,20 @@
 ----
 
 ### Creational創建型模式
-- **Simple Factory Pattern**<br/>
-- **Factory Method模式**<br/>
-- **Abstract Factory模式**<br/>
-- **Singleton模式**<br/>
-- **Builder模式**<br/>
+- **Simple Factory Pattern簡單工廠模式**<br/>
+- **Factory Method工廠模式**<br/>
+- **Abstract Factory抽象工廠模式**<br/>
+- **Singleton單例模式**<br/>
+- **Builder建造者模式**<br/>
 
 ----
 
 ### Structural結構型模式
-- **Bridge 模式**<br/>
-- **Adapter模式**<br/>
+- **Bridge橋接模式**<br/>
+- **Adapter適配器模式**<br/>
 - **Composite模式**<br/>
-- **Decorator 模式**<br/>
-- **Façade模式**<br/>
+- **Decorator裝飾模式**<br/>
+- **Façade外觀模式**<br/>
 表象模式：提供了一個統一的介面，用來存取次系統的一群介面，讓次系統共容易使用<br/>
 我們以泡咖啡來形容表象模式，假設泡咖啡有以下幾種流程：<br/>
 1.煮開水<br/>
@@ -105,7 +105,7 @@ int main(){
 ----
 
 ### Behavioral行為型模式
-- **Template Method模式**<br/>
+- **Template Method樣板模式**<br/>
 樣板方法模式：將一個演算法的骨架定義在一個父類別中，著重的是在父類別實作骨架，而將未實作抽象方法部份留待子類別來實作，在抽象父類別中定義好某個操作的整體流程，而在子類別中才將流程中一些未定的操作實現出來<br/>
 在描述演算法流程輸廓時，並沒有提及如何顯示訊息、沒有提及如何取得使用者輸入等具體的作法，只是歸納出一些共同的流程步驟<br/>
 Factory Method 模式將實際要建立的物件推遲至子類中決定，而 Template Method模式則是將框架中抽象的流程部份留待子類來解決<br/>
@@ -172,7 +172,7 @@ int main(){
 ```
 <br/>
 
-- **Observer模式**<br/>
-- **State模式**<br/>
-- **Strategy模式**<br/>
-- **Command模式**<br/>
+- **Observer觀察者模式**<br/>
+- **State狀態模式**<br/>
+- **Strategy策略模式**<br/>
+- **Command命令模式**<br/>
